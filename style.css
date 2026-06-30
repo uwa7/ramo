@@ -1,1 +1,79 @@
-body{font-family:Arial;background:linear-gradient(45deg,#111827,#312e81);display:flex;justify-content:center;align-items:center;min-height:100vh;color:#fff}.container{max-width:420px;width:90%;background:#ffffff18;padding:25px;border-radius:20px}.btn{display:flex;justify-content:space-between;text-decoration:none;color:#fff;padding:15px;border-radius:12px;margin:12px 0}.instagram{background:#c13584}.whatsapp{background:#25D366}.tiktok{background:#111}.buttons{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}button{padding:10px;border:none;border-radius:10px}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#111827);
+}
+
+.container{
+    width:90%;
+    max-width:420px;
+    text-align:center;
+    padding:30px;
+    border-radius:25px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    box-shadow:0 10px 40px rgba(0,0,0,.35);
+}
+
+h1{
+    color:#fff;
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+p{
+    color:#ddd;
+    margin-bottom:30px;
+}
+
+.card{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    text-decoration:none;
+    color:#fff;
+    padding:18px;
+    border-radius:18px;
+    margin-bottom:18px;
+    transition:.3s;
+}
+
+.card i{
+    font-size:34px;
+    width:45px;
+}
+
+.card span{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.card small{
+    margin-right:auto;
+    opacity:.8;
+}
+
+.card:hover{
+    transform:translateY(-5px) scale(1.03);
+}
+
+.instagram{
+    background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4);
+}
+
+.whatsapp{
+    background:#25D366;
+}
+
+.tiktok{
+    background:linear-gradient(45deg,#000,#00f2ea,#ff0050);
+  }
