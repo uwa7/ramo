@@ -1,48 +1,99 @@
 *{
-  box-sizing:border-box;
+box-sizing:border-box;
+font-family:Arial;
 }
+
 
 body{
-  margin:0;
-  height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background:linear-gradient(135deg,#111,#222);
-  font-family:Arial, sans-serif;
+margin:0;
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+transition:.3s;
 }
 
-.box{
-  width:300px;
-  padding:25px;
-  text-align:center;
-  background:#1e1e1e;
-  border-radius:25px;
-  box-shadow:0 0 25px #000;
+
+.dark{
+background:#0b0b0f;
+color:white;
 }
+
+
+.light{
+background:#f4f4f4;
+color:#111;
+}
+
+
+.container{
+width:90%;
+max-width:450px;
+}
+
+
+.top{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:25px;
+}
+
 
 h1{
-  color:white;
-  margin-bottom:25px;
+font-size:35px;
 }
 
-a,button{
-  display:block;
-  width:100%;
-  margin:12px 0;
-  padding:15px;
-  border-radius:15px;
-  border:none;
-  text-decoration:none;
-  color:white;
-  font-size:17px;
-  background:#333;
+
+.card{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+margin:15px 0;
+border-radius:20px;
+backdrop-filter:blur(10px);
+box-shadow:0 10px 30px #0003;
 }
 
-a:hover,button:hover{
-  transform:scale(1.05);
+
+.dark .card{
+background:#181820;
 }
 
-.open{
-  background:#00c853;
+
+.light .card{
+background:white;
+}
+
+
+h2{
+margin:0;
+}
+
+
+p{
+opacity:.7;
+}
+
+
+button{
+border:0;
+padding:12px 15px;
+border-radius:14px;
+cursor:pointer;
+background:#5865f2;
+color:white;
+}
+
+
+.top button{
+margin-left:5px;
+}
+
+
+#msg{
+text-align:center;
+color:#00c853;
+font-weight:bold;
 }
