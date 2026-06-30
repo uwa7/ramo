@@ -4,17 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>My Social Links</title>
-
+<title>My Links</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="dark">
 
 <div class="container">
 
-<div class="top">
-<h1>My Links</h1>
+<div class="header">
+<h1>My Socials</h1>
 
 <div>
 <button onclick="darkMode()">Dark</button>
@@ -29,7 +28,7 @@
 <p>01122630198</p>
 </div>
 
-<button onclick="copyText('01122630198')">
+<button class="copy" onclick="copyText('01122630198')">
 Copy WhatsApp
 </button>
 </div>
@@ -42,7 +41,7 @@ Copy WhatsApp
 <p>_ramadan.090</p>
 </div>
 
-<button onclick="copyText('_ramadan.090')">
+<button class="copy" onclick="copyText('_ramadan.090')">
 Copy Insta
 </button>
 </div>
@@ -55,13 +54,13 @@ Copy Insta
 <p>_ahmedramadan0</p>
 </div>
 
-<button onclick="copyText('_ahmedramadan0')">
+<button class="copy" onclick="copyText('_ahmedramadan0')">
 Copy TikTok
 </button>
 </div>
 
 
-<p id="msg"></p>
+<div id="msg"></div>
 
 </div>
 
@@ -69,15 +68,13 @@ Copy TikTok
 <script>
 
 function copyText(text){
-
 navigator.clipboard.writeText(text);
 
-document.getElementById("msg").innerHTML="Copied ✔";
+msg.innerHTML="Copied ✔";
 
 setTimeout(()=>{
-document.getElementById("msg").innerHTML="";
-},1500);
-
+msg.innerHTML="";
+},1000);
 }
 
 
