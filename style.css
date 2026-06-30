@@ -1,79 +1,48 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
+  box-sizing:border-box;
 }
 
 body{
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:linear-gradient(135deg,#0f172a,#1e293b,#111827);
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#111,#222);
+  font-family:Arial, sans-serif;
 }
 
-.container{
-    width:90%;
-    max-width:420px;
-    text-align:center;
-    padding:30px;
-    border-radius:25px;
-    background:rgba(255,255,255,.08);
-    backdrop-filter:blur(15px);
-    box-shadow:0 10px 40px rgba(0,0,0,.35);
+.box{
+  width:300px;
+  padding:25px;
+  text-align:center;
+  background:#1e1e1e;
+  border-radius:25px;
+  box-shadow:0 0 25px #000;
 }
 
 h1{
-    color:#fff;
-    font-size:34px;
-    margin-bottom:10px;
+  color:white;
+  margin-bottom:25px;
 }
 
-p{
-    color:#ddd;
-    margin-bottom:30px;
+a,button{
+  display:block;
+  width:100%;
+  margin:12px 0;
+  padding:15px;
+  border-radius:15px;
+  border:none;
+  text-decoration:none;
+  color:white;
+  font-size:17px;
+  background:#333;
 }
 
-.card{
-    display:flex;
-    align-items:center;
-    gap:15px;
-    text-decoration:none;
-    color:#fff;
-    padding:18px;
-    border-radius:18px;
-    margin-bottom:18px;
-    transition:.3s;
+a:hover,button:hover{
+  transform:scale(1.05);
 }
 
-.card i{
-    font-size:34px;
-    width:45px;
-}
-
-.card span{
-    font-size:20px;
-    font-weight:bold;
-}
-
-.card small{
-    margin-right:auto;
-    opacity:.8;
-}
-
-.card:hover{
-    transform:translateY(-5px) scale(1.03);
-}
-
-.instagram{
-    background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4);
-}
-
-.whatsapp{
-    background:#25D366;
-}
-
-.tiktok{
-    background:linear-gradient(45deg,#000,#00f2ea,#ff0050);
+.open{
+  background:#00c853;
 }
