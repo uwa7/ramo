@@ -1,39 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Links</title>
+
+<title>My Social Links</title>
+
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="box">
+<div class="container">
 
+<div class="top">
 <h1>My Links</h1>
 
-<button class="open" onclick="openBrowser()">
-Open in Browser
+<div>
+<button onclick="darkMode()">Dark</button>
+<button onclick="lightMode()">Light</button>
+</div>
+</div>
+
+
+<div class="card">
+<div>
+<h2>WhatsApp</h2>
+<p>01122630198</p>
+</div>
+
+<button onclick="copyText('01122630198')">
+Copy WhatsApp
 </button>
+</div>
 
-<a href="https://wa.me/201122630198">WhatsApp</a>
 
-<a href="https://instagram.com/_ramadan.090">
-Instagram
-</a>
 
-<a href="https://tiktok.com/@_ahmedramadan0">
-TikTok
-</a>
+<div class="card">
+<div>
+<h2>Instagram</h2>
+<p>_ramadan.090</p>
+</div>
+
+<button onclick="copyText('_ramadan.090')">
+Copy Insta
+</button>
+</div>
+
+
+
+<div class="card">
+<div>
+<h2>TikTok</h2>
+<p>_ahmedramadan0</p>
+</div>
+
+<button onclick="copyText('_ahmedramadan0')">
+Copy TikTok
+</button>
+</div>
+
+
+<p id="msg"></p>
 
 </div>
 
 
 <script>
-function openBrowser(){
-  window.open(window.location.href, "_blank");
+
+function copyText(text){
+
+navigator.clipboard.writeText(text);
+
+document.getElementById("msg").innerHTML="Copied ✔";
+
+setTimeout(()=>{
+document.getElementById("msg").innerHTML="";
+},1500);
+
 }
+
+
+function darkMode(){
+document.body.className="dark";
+}
+
+
+function lightMode(){
+document.body.className="light";
+}
+
 </script>
+
 
 </body>
 </html>
