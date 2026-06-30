@@ -1,44 +1,39 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Ramadan</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Links</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="container">
-    <h1>Ahmed Ramadan</h1>
-    <p>تواصل معي على منصات التواصل</p>
+<div class="box">
 
-    <a class="card instagram"
-       href="https://www.instagram.com/_ramadan.090"
-       target="_blank">
-        <i class="fab fa-instagram"></i>
-        <span>Instagram</span>
-        <small>@_ramadan.090</small>
-    </a>
+<h1>My Links</h1>
 
-    <a class="card whatsapp"
-       href="https://wa.me/201122630198"
-       target="_blank">
-        <i class="fab fa-whatsapp"></i>
-        <span>WhatsApp</span>
-        <small>01122630198</small>
-    </a>
+<button class="open" onclick="openBrowser()">
+Open in Browser
+</button>
 
-    <a class="card tiktok"
-       href="https://www.tiktok.com/@_ahmedramadan0"
-       target="_blank">
-        <i class="fab fa-tiktok"></i>
-        <span>TikTok</span>
-        <small>@_ahmedramadan.0</small>
-    </a>
+<a href="https://wa.me/201122630198">WhatsApp</a>
+
+<a href="https://instagram.com/_ramadan.090">
+Instagram
+</a>
+
+<a href="https://tiktok.com/@_ahmedramadan0">
+TikTok
+</a>
 
 </div>
+
+
+<script>
+function openBrowser(){
+  window.open(window.location.href, "_blank");
+}
+</script>
 
 </body>
 </html>
